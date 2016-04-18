@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Lizilina Porfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="timeline.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: black;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #1496BB;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid-foot{
+     background-color: #1496BB;
+      padding: 60px 50px;
+      color: #000000
+
+  }
+  .container-fluid2 {
+    background-color: #fff;
+      padding: 60px 50px;
+      color: #000000
+  }
+  .container-fluid {
+    background-color: #00cc66;
+      padding: 60px 50px;
+      color: #000000
+  }
+  .bg-grey {
+      background-color: #ff944d;
+  }
+  .logo-small {
+      color: #1496BB;
+      font-size: 50px;
+  }
+  .logo {
+      color: #1496BB;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #1496BB;
+  }
+  .carousel-indicators li {
+      border-color: #1496BB;
+  }
+  .carousel-indicators li.active {
+      background-color: #1496BB;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #1496BB; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #1496BB;
+      background-color: #fff !important;
+      color: #1496BB;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #1496BB !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #1496BB;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #1496BB;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .white p,h4{
+    color: #fff
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1496BB !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #1496BB;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;	
+      animation-duration: 1s;	
+      -webkit-animation-duration: 1s;
+      visibility: visible;			
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }	
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About Liz</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#values">Interests</a></li>
+        <li><a href="#services">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#pricing">Other Profiles </a></li>
+        <li><a href="#contact">Reach me at!</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Lizilina Parhi</h1> 
+  <p>MS in Computer Science engineering</p> 
+  <form class="form-inline">
+    <img src="pic.jpg" class="img-circle" alt="Lizilina Parhi" width="314" height="371">
+  </form>
+  <p> GPA 3.75 / 4.0</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+    
+      <h2 class="white"> about Liz</h2><br>
+      <h4> Software engineer with passion to develop responsive websites using powerful languages like Bootsrap, HTML and JS .
+      The focus of my studies at Santa Clara University has been to educate myself in the cutting edge technologies that form the basis of today’s real world applications.  My coursework, especially course labs and projects, have helped immensely to enhance my coding skills and develop a capacity for lateral thinking .My technical expertise includes Java, PHP,Ajax , JavaScript frameworks and CSS, HTML5, Operating systems and advanced knowledge of developer applications, tools, methodologies and software development lifecycle models.</h4>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <img class="img-responsive" src="me.png"></img>
+    </div>
+  </div>
+</div>
+<div  id="resume" class="container">
+  <div class="page-header">
+    <h1 id="timeline">Resume</h1>
+  </div>
+  <ul class="timeline">
+    <li>
+      <div class="timeline-badge"><img class="img-responsive" src="clock.png"></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">SanDisk Corporation, Milpitas, California</h4>
+          <h5  class="timeline-title">Software Intern</h5>
+          <h5  class="timeline-title">SoC Designer Tool</h5>
+          <h6  class="timeline-title">June 2015 - Oct 2015</h6>
+
+
+          <br>
+        </div>
+        <div class="timeline-body">
+          <p>
+• Coded a shopping cart for different module owners to place orders to vendors</p>
+<p>• Implemented storage of transaction and order state in DB pending manager approval</p>
+<p>• Designed connectors to ensure managers and vendors are alerted respectively on order issuance and approval </p>
+<p>• Technologies used: PHP, JSP, JQuery, HTML, AJAX</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><img class="img-responsive" src="clock.png"></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+                 <h4 class="timeline-title">SanDisk Corporation, Milpitas, California</h4>
+          <h5  class="timeline-title">Software Intern</h5>
+          <h5  class="timeline-title">Contracts DB Visualization Project</h5>
+          <h6  class="timeline-title">June 2015 - Oct 2015</h6>
+          <br>
+        </div>
+        <div class="timeline-body">
+          <p>
+• Parsed excel data into JSP search page to display contracts based on module, expense, vendors or date, updated periodically using AJAX</p>
+<p>• Created a SQL job running a stored procedure to calculate amortization of capital expenditure</p>
+<p>Used d3.js library for data driven visualization using DOM manipulation</p>
+<p>• Technologies used: PHP, JSP, JQuery, HTML, AJAX</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge"><img class="img-responsive" src="clock.png"></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Tata Consultancy Services, India</h4>
+          <h5  class="timeline-title">Software Developer</h5>
+          <h5  class="timeline-title">Customer Registration Portal for AEGON UK</h5>
+          <h6  class="timeline-title">June 2012 - May 2014</h6>
+
+
+          <br>
+        </div>
+        <div class="timeline-body">
+          <p>
+• Created Enrollment UI with request-builders for validating data before routing to appropriate enterprise java beans</p>
+<p>• Developed exception handers and backend stored procedures in Oracle DB for storing and retrieving customer details</p>
+<p>• Developed unit and integration test cases for unit testing and integration testing </p>
+<p>• Technologies Used: Servlets, JSP, XML, XSL, JavaScript, Oracle DB</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><img class="img-responsive" src="clock.png"></img></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+                <h4 class="timeline-title">Tata Consultancy Services, India</h4>
+          <h5  class="timeline-title">Software Developer</h5>
+          <h5  class="timeline-title">Integrated Relationship Management System</h5>
+          <h6  class="timeline-title">June 2014 - July 2015</h6>
+          <br>
+        </div>
+        <div class="timeline-body">
+          <p>
+• Project to integrate multiple internal systems for resource requisition, project metrics & training details in single system</p>
+<p>• Created manager class to implement business logic for request processing, account mgmt & provisioning to modules</p>
+<p>Used J2EE based MVC framework with servlet acting as controller and JSP pages as views</p>
+<p>•Technologies used: J2EE, JSP, Oracle DB</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge info"><img class="img-responsive" src="hat.png"></img></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Masters of Science in Computer Science & Engineering</h4>
+          <h5  class="timeline-title">Santa Clara University</h5>
+          <h5  class="timeline-title">September 2016- June 2014</h5>
+        </div>
+        <div class="timeline-body">
+         
+          <hr>
+          <div class="btn-group">
+            
+            
+    <li class="timeline-inverted">
+      <div class="timeline-badge success"><img class="img-responsive" src="hat.png"></img></div>
+      <div class="timeline-panel">
+       <div class="timeline-heading">
+          <h4 class="timeline-title">(B.Tech) Bachelors of Technology in Computer Science & Engineering</h4>
+          <h5  class="timeline-title">ITM Univesity</h5>
+          <h5  class="timeline-title">August 2008- May 2012</h5>
+        </div>
+       
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="container-fluid bg-grey" id="values">
+ <h2 >Interests </h2>
+  <div class="row">
+    <div class="col-sm-4" >
+      <img class="img-responsive" src="hoby.png"></img>
+    </div>
+    <div class="col-sm-8">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="travel.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="shopping.jpg" alt="Chania">
+    </div>
+
+    
+
+    <div class="item">
+      <img src="painting.png" alt="Flower">
+    </div>
+    <div class="item">
+      <img src="Reading.png" alt="Flower">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid ">
+  <h2>Skills</h2>
+  <h4>What I know ?</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>Java</h4>
+      <p>Advanced level</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>JavaScript</h4>
+      <p>Advanced Level</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>PHP</h4>
+      <p>Advanced Level</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>HTML5/ CSS3</h4>
+      <p>Advanced Level</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>MySQL</h4>
+      <p>Advanced Level</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>BOOTSRAP</h4>
+      <p>Intermediate Level </p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>Ruby On Rails</h4>
+      <p>Intermediate Level</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>R statistical language</h4>
+      <p>Intermediate Level</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4 >C++</h4>
+      <p>Intermediate Level</p>
+    </div>
+  </div>
+
+
+</div><br>
+
+<!-- Container (Portfolio Section) -->
+
+  <section id="portfolio">
+        <div class="container">
+            <div class="row">
+               
+            </div>
+             <h2 >Projects</h2>
+            <div class="row">
+                <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="yelp.png" height="290px" width="300px" alt="">
+
+                    </a>
+                     <h5>Yelp Dataset Challenge</h5>
+                <p class="text-left"> Parsing of big datasets, Craeting populating Oracle DB and making Java SWING application</p>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="online.jpg" height="300px" width="300px" class="img-responsive" alt="">
+                    </a>
+                     <h5>Online News popularity </h5>
+                <p class="text-left">Using R statistical language to predict popularity of online news using decision trees , random forests and logistic regression</p>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="unnamed.png" height="300px" width="300px" class="img-responsive" alt="">
+                    </a>
+                     <h5> SCU Hangouts Chat App</h5>
+                <p class="text-left">Used PHP , AJAX, Javascript and html/css. Chat with friends, Adding /deletingfriends, notifictions check </p>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="scu.jpg" height="300px" width="300px" alt="">
+                    </a>
+                     <h5> University Portal</h5>
+                <p class="text-left">Online portal for registering students add/ remove students/ enrolling in courses and drop courses/check schedule . Used SINATRA framework for route handling</p>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="book.jpg" height="300px" width="300px"  alt="">
+                    </a>
+                     <h5>Ecommerce for Books</h5>
+                <p class="text-left">Ruby On Rails based shopping experience for user . Special privilidgees for admin role.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+<!-- Container (Pricing Section) -->
+
+<div id="pricing" class="container-fluid">
+  <div >
+    <h2>Links to Other Profiles </h2>
+    
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Linkedin</h1>
+        </div>
+        <div class="panel-body">
+           <p><strong><a href="https://www.linkedin.com/in/lizilina-parhi-9b65811b
+">Linkedin link</a></strong> </p>
+        </div>
+        
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>GitHub </h1>
+        </div>
+        <div class="panel-body">
+           <p><strong><a href="https://github.com/LiziParhi">GitHub link</a></strong> </p>
+        </div>
+        
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Angelio</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong><a href="https://angel.co/lizilina-parhi">Angelio link</a></strong> </p>
+        </div>
+        
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT ME</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Reach me out at</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Santa Clara, CA, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1 408-646-7562</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> liziparhi@gmail.com</p>	   
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>	
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Add Google Maps -->
+
+
+<footer class="container-fluid-foot text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Portfolio made by Lizilina Parhi</p>		
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
